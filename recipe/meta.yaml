@@ -31,5 +31,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - jakirkham
     - mwcraig
     - pelson
