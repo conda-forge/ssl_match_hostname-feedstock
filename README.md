@@ -5,7 +5,7 @@ Home: http://bitbucket.org/brandon/backports.ssl_match_hostname
 
 Package license: Python Software Foundation License
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: The ssl.match_hostname() function from Python 3.5
 
@@ -69,9 +69,10 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ssl_match_hostname-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/ssl_match_hostname-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/ssl_match_hostname-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ssl_match_hostname-feedstock) 
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ssl_match_hostname-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ssl_match_hostname-feedstock/branch/master)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ssl-match-hostname-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ssl-match-hostname-feedstock/branch/master)
 
 Current release info
 ====================
