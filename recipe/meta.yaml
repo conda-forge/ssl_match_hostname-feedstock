@@ -27,6 +27,7 @@ test:
 about:
   home: http://bitbucket.org/brandon/backports.ssl_match_hostname
   license:  PSF 2
+  license_file: backports/ssl_match_hostname/LICENSE.txt
   summary: 'The ssl.match_hostname() function from Python 3.5'
 
 extra:
