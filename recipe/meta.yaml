@@ -19,6 +19,7 @@ requirements:
     - pip
   run:
     - python
+    - backports
     - ipaddress
 
 test:
