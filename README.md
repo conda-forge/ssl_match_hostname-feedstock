@@ -23,6 +23,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-backports.ssl_match_hostname-green.svg)](https://anaconda.org/conda-forge/backports.ssl_match_hostname) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/backports.ssl_match_hostname.svg)](https://anaconda.org/conda-forge/backports.ssl_match_hostname) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/backports.ssl_match_hostname.svg)](https://anaconda.org/conda-forge/backports.ssl_match_hostname) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/backports.ssl_match_hostname.svg)](https://anaconda.org/conda-forge/backports.ssl_match_hostname) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-ssl_match_hostname-green.svg)](https://anaconda.org/conda-forge/ssl_match_hostname) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ssl_match_hostname.svg)](https://anaconda.org/conda-forge/ssl_match_hostname) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ssl_match_hostname.svg)](https://anaconda.org/conda-forge/ssl_match_hostname) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ssl_match_hostname.svg)](https://anaconda.org/conda-forge/ssl_match_hostname) |
 
 Installing ssl_match_hostname
@@ -34,16 +35,16 @@ Installing `ssl_match_hostname` from the `conda-forge` channel can be achieved b
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `ssl_match_hostname` can be installed with:
+Once the `conda-forge` channel has been enabled, `backports.ssl_match_hostname, ssl_match_hostname` can be installed with:
 
 ```
-conda install ssl_match_hostname
+conda install backports.ssl_match_hostname ssl_match_hostname
 ```
 
-It is possible to list all of the versions of `ssl_match_hostname` available on your platform with:
+It is possible to list all of the versions of `backports.ssl_match_hostname` available on your platform with:
 
 ```
-conda search ssl_match_hostname --channel conda-forge
+conda search backports.ssl_match_hostname --channel conda-forge
 ```
 
 
