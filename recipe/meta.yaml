@@ -23,7 +23,7 @@ test:
     - backports.ssl_match_hostname
 
 outputs:
-  - name: ssl_match_hostname
+  - name: backports.ssl_match_hostname
     build:
       script: python -m pip install --no-deps --ignore-installed .
     requirements:
@@ -31,10 +31,10 @@ outputs:
       - backports
       - ipaddress
 
-  - name: backports.ssl_match_hostname
+  - name: ssl_match_hostname
     requirements:
       - python
-      - {{ pin_subpackage('ssl_match_hostname', exact=True) }}
+      - {{ pin_subpackage('backports.ssl_match_hostname', exact=True) }}
 
 
 about:
