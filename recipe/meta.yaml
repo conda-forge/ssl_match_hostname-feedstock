@@ -9,24 +9,39 @@ source:
   sha256: 502ad98707319f4a51fa2ca1c677bd659008d27ded9f6380c79e8932e38dcdf2
 
 build:
-  number: 1
-  script: python setup.py install
+  number: 2
   skip: True  # [py>=35]
 
 requirements:
-  build:
+  host:
     - python
-  run:
-    - python
+    - pip
+    - backports
 
 test:
   imports:
     - backports
     - backports.ssl_match_hostname
 
+outputs:
+  - name: backports.ssl_match_hostname
+    build:
+      script: python -m pip install --no-deps --ignore-installed .
+    requirements:
+      - python
+      - backports
+      - ipaddress
+
+  - name: ssl_match_hostname
+    requirements:
+      - python
+      - {{ pin_subpackage('backports.ssl_match_hostname', exact=True) }}
+
+
 about:
   home: http://bitbucket.org/brandon/backports.ssl_match_hostname
   license:  PSF 2
+  license_family: PSF
   license_file: backports/ssl_match_hostname/LICENSE.txt
   summary: 'The ssl.match_hostname() function from Python 3.5'
 
@@ -35,3 +50,4 @@ extra:
     - jakirkham
     - mwcraig
     - pelson
+    - scopatz
