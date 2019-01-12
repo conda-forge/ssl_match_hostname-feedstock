@@ -1,4 +1,4 @@
-{% set version = "3.5.0.1" %}
+{% set version = "3.7.0.1" %}
 package:
   name: ssl_match_hostname
   version: {{ version }}
@@ -6,10 +6,10 @@ package:
 source:
   fn: backports.ssl_match_hostname-{{ version }}.tar.gz
   url: https://pypi.python.org/packages/source/b/backports.ssl_match_hostname/backports.ssl_match_hostname-{{ version }}.tar.gz
-  sha256: 502ad98707319f4a51fa2ca1c677bd659008d27ded9f6380c79e8932e38dcdf2
+  sha256: bb82e60f9fbf4c080eabd957c39f0641f0fc247d9a16e31e26d594d8f42b9fd2
 
 build:
-  number: 1001
+  number: 1000
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   skip: True  # [py>=35]
 
