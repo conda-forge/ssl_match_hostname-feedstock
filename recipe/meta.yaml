@@ -17,8 +17,10 @@ requirements:
   host:
     - python
     - pip
+    - backports
   run:
     - python
+    - backports
 
 test:
   imports:
