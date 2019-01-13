@@ -11,7 +11,6 @@ source:
 build:
   number: 1000
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
-  skip: True  # [py>=35]
 
 requirements:
   host:
